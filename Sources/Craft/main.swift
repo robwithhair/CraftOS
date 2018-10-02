@@ -14,6 +14,12 @@ func main(withArguments arguments: [String]) throws {
         exit(1)
     }
     print("gotToSubparser")
+    switch subparser {
+    case "serve":
+        try serve()
+    default:
+        break
+    }
     print("command: \(subparser)")
     print("args: \(parsedArguments)")
 }
