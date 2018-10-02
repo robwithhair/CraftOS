@@ -30,5 +30,8 @@ let package = Package(
         .testTarget(
             name: "CraftOSTests",
             dependencies: ["CraftOS"]),
+        .testTarget(
+            name: "CraftTests",
+            dependencies: ["Craft"]),
     ]
 )
